@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule • ALL-STAR TEAM UP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', system_ui, sans-serif; }
+        .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; font-weight: 600; }
+    </style>
+</head>
+<body class="bg-[#0A0A0A] text-white">
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-[#0A0A0A]/95 backdrop-blur">
+        <div class="max-w-7xl mx-auto px-8 flex items-center justify-between py-5">
+            <div class="flex items-center gap-x-3">
+                <div class="w-9 h-9 bg-cyan-400 rounded-xl flex items-center justify-center">
+                    <i class="fa-solid fa-trophy text-[#0A0A0A]"></i>
+                </div>
+                <a href="index.html" class="font-display text-xl font-semibold tracking-tighter">ALL-STAR TEAM UP</a>
+            </div>
+            <div class="flex items-center gap-x-8 text-sm">
+                <a href="index.html" class="hover:text-cyan-400">Home</a>
+                <a href="tournaments.html" class="hover:text-cyan-400">Tournaments</a>
+                <a href="schedule.html" class="text-cyan-400 font-medium">Schedule</a>
+                <a href="register.html" class="hover:text-cyan-400">Register</a>
+                <a href="https://discord.gg/Tc6GG7sCR" target="_blank" class="px-5 py-2 bg-white/10 rounded-2xl text-sm font-medium">Discord</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="pt-20 pb-16 px-8 max-w-5xl mx-auto">
+        <div class="mb-10">
+            <div class="text-cyan-400 text-sm font-semibold tracking-[2px]">SEASON 1 • AUGUST 2026</div>
+            <h1 class="font-display text-5xl tracking-tighter">Full Schedule</h1>
+        </div>
+
+        <div class="space-y-4">
+            <div class="bg-zinc-900 border border-white/10 rounded-3xl p-7 flex items-center justify-between">
+                <div>
+                    <div class="font-semibold text-xl">Qualifier #1</div>
+                    <div class="text-white/60">August 8, 2026 • 8:00 PM ET</div>
+                </div>
+                <div class="text-right">
+                    <div class="text-emerald-400 font-medium">Registration Open</div>
+                    <a href="register.html" class="text-sm text-cyan-400">Register →</a>
+                </div>
+            </div>
+
+            <div class="bg-zinc-900 border border-white/10 rounded-3xl p-7 flex items-center justify-between">
+                <div>
+                    <div class="font-semibold text-xl">Qualifier #2</div>
+                    <div class="text-white/60">August 15, 2026 • 8:00 PM ET</div>
+                </div>
+                <div class="text-right">
+                    <div class="text-emerald-400 font-medium">Registration Open</div>
+                    <a href="register.html" class="text-sm text-cyan-400">Register →</a>
+                </div>
+            </div>
+
+            <div class="bg-zinc-900 border border-white/10 rounded-3xl p-7 flex items-center justify-between">
+                <div>
+                    <div class="font-semibold text-xl">Season 1 Finals</div>
+                    <div class="text-white/60">August 22, 2026 • 8:00 PM ET</div>
+                </div>
+                <div class="text-right">
+                    <div class="text-emerald-400 font-medium">Registration Open</div>
+                    <a href="register.html" class="text-sm text-cyan-400">Register →</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-10 p-6 bg-zinc-950 border border-white/10 rounded-3xl text-sm text-white/70">
+            All matches will be streamed on Discord. Brackets and exact times will be posted 48 hours before each event.
+        </div>
+    </div>
+
+    <footer class="border-t border-white/10 py-8 px-8 text-sm text-white/50">
+        <div class="max-w-7xl mx-auto flex justify-between">
+            <div>© 2026 All-Star Team Up • @all_star_team_up</div>
+            <a href="index.html" class="hover:text-white">← Back to Home</a>
+        </div>
+    </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Received • ALL-STAR TEAM UP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', system_ui, sans-serif; }
+        .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; font-weight: 600; }
+    </style>
+</head>
+<body class="bg-[#0A0A0A] text-white min-h-screen flex items-center justify-center">
+    <div class="max-w-lg mx-auto px-6 text-center">
+        <div class="w-24 h-24 mx-auto mb-8 bg-emerald-500/10 rounded-full flex items-center justify-center">
+            <i class="fa-solid fa-circle-check text-emerald-400 text-6xl"></i>
+        </div>
+        
+        <h1 class="font-display text-5xl tracking-tighter mb-4">Payment Received!</h1>
+        <p class="text-xl text-emerald-400 mb-8">Thank you for registering.</p>
+
+        <div class="bg-zinc-900 border border-white/10 rounded-3xl p-8 text-left space-y-6 mb-10">
+            <div>
+                <div class="uppercase text-xs tracking-widest text-white/60 mb-1">NEXT STEPS</div>
+                <ol class="space-y-4 text-sm">
+                    <li class="flex gap-x-3">
+                        <span class="font-mono text-emerald-400 font-medium">1.</span>
+                        <span>Join the official Discord server immediately</span>
+                    </li>
+                    <li class="flex gap-x-3">
+                        <span class="font-mono text-emerald-400 font-medium">2.</span>
+                        <span>Post your PSN/Gamertag in the registration channel</span>
+                    </li>
+                    <li class="flex gap-x-3">
+                        <span class="font-mono text-emerald-400 font-medium">3.</span>
+                        <span>Team Captains: Create private locker room and invite other captains</span>
+                    </li>
+                    <li class="flex gap-x-3">
+                        <span class="font-mono text-emerald-400 font-medium">4.</span>
+                        <span>Watch for bracket and match schedule in Discord</span>
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <a href="https://discord.gg/Tc6GG7sCR" target="_blank"
+           class="inline-flex items-center gap-x-3 bg-[#5865F2] hover:bg-[#4752C4] px-8 py-4 rounded-2xl font-semibold text-lg transition-all">
+            <i class="fa-brands fa-discord text-2xl"></i>
+            <span>Join Discord Now</span>
+        </a>
+
+        <p class="mt-8 text-white/50 text-sm">
+            Questions? Message us in the Discord.
+        </p>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tournaments • ALL-STAR TEAM UP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', system_ui, sans-serif; }
+        .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; font-weight: 600; }
+        .nav-scrolled { background-color: rgba(10, 10, 10, 0.95); backdrop-filter: blur(12px); }
+    </style>
+</head>
+<body class="bg-[#0A0A0A] text-white">
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-[#0A0A0A]/95 backdrop-blur">
+        <div class="max-w-7xl mx-auto px-8 flex items-center justify-between py-5">
+            <div class="flex items-center gap-x-3">
+                <div class="w-9 h-9 bg-cyan-400 rounded-xl flex items-center justify-center">
+                    <i class="fa-solid fa-trophy text-[#0A0A0A]"></i>
+                </div>
+                <a href="index.html" class="font-display text-xl font-semibold tracking-tighter">ALL-STAR TEAM UP</a>
+            </div>
+            <div class="flex items-center gap-x-8 text-sm">
+                <a href="index.html" class="hover:text-cyan-400">Home</a>
+                <a href="tournaments.html" class="text-cyan-400 font-medium">Tournaments</a>
+                <a href="schedule.html" class="hover:text-cyan-400">Schedule</a>
+                <a href="register.html" class="hover:text-cyan-400">Register</a>
+                <a href="https://discord.gg/Tc6GG7sCR" target="_blank" class="px-5 py-2 bg-white/10 rounded-2xl text-sm font-medium">Discord</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="pt-20 pb-12 px-8 max-w-6xl mx-auto">
+        <div class="mb-10">
+            <div class="text-cyan-400 text-sm font-semibold tracking-[2px]">CURRENT &amp; UPCOMING</div>
+            <h1 class="font-display text-5xl tracking-tighter">Tournaments</h1>
+            <p class="mt-2 text-lg text-white/80">1st ever private All-Star Team Up 5v5 player control tournament</p>
+        </div>
+
+        <!-- Season 1 Tournaments -->
+        <div class="mb-12">
+            <div class="flex items-center justify-between mb-6">
+                <div>
+                    <span class="px-4 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-bold rounded-full">SEASON 1 • AUGUST 2026</span>
+                    <span class="ml-3 text-white/60">Registration Open</span>
+                </div>
+                <a href="register.html" class="text-sm font-medium text-cyan-400 hover:text-cyan-300">Register Now →</a>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-zinc-900 border border-white/10 rounded-3xl p-7">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <div class="font-semibold text-xl">Qualifier #1</div>
+                            <div class="text-white/60 text-sm">August 8, 2026</div>
+                        </div>
+                        <div class="text-emerald-400 text-xs font-bold px-3 py-1 bg-emerald-500/10 rounded-full">OPEN</div>
+                    </div>
+                    <div class="mt-6 text-sm space-y-2">
+                        <div class="flex justify-between"><span class="text-white/60">Format</span><span>5v5 Team</span></div>
+                        <div class="flex justify-between"><span class="text-white/60">Prize Pool</span><span class="font-semibold">$450</span></div>
+                    </div>
+                    <a href="register.html" class="mt-6 block text-center py-3 bg-white text-black font-semibold rounded-2xl text-sm">Join This Event</a>
+                </div>
+
+                <div class="bg-zinc-900 border border-white/10 rounded-3xl p-7">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <div class="font-semibold text-xl">Qualifier #2</div>
+                            <div class="text-white/60 text-sm">August 15, 2026</div>
+                        </div>
+                        <div class="text-emerald-400 text-xs font-bold px-3 py-1 bg-emerald-500/10 rounded-full">OPEN</div>
+                    </div>
+                    <div class="mt-6 text-sm space-y-2">
+                        <div class="flex justify-between"><span class="text-white/60">Format</span><span>5v5 Team</span></div>
+                        <div class="flex justify-between"><span class="text-white/60">Prize Pool</span><span class="font-semibold">$450</span></div>
+                    </div>
+                    <a href="register.html" class="mt-6 block text-center py-3 bg-white text-black font-semibold rounded-2xl text-sm">Join This Event</a>
+                </div>
+
+                <div class="bg-zinc-900 border border-white/10 rounded-3xl p-7">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <div class="font-semibold text-xl">Season 1 Finals</div>
+                            <div class="text-white/60 text-sm">August 22, 2026</div>
+                        </div>
+                        <div class="text-emerald-400 text-xs font-bold px-3 py-1 bg-emerald-500/10 rounded-full">OPEN</div>
+                    </div>
+                    <div class="mt-6 text-sm space-y-2">
+                        <div class="flex justify-between"><span class="text-white/60">Format</span><span>Top 8 Teams</span></div>
+                        <div class="flex justify-between"><span class="text-white/60">Prize Pool</span><span class="font-semibold">$450</span></div>
+                    </div>
+                    <a href="register.html" class="mt-6 block text-center py-3 bg-white text-black font-semibold rounded-2xl text-sm">Join This Event</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center text-white/50 text-sm mt-8">
+            Season 2 &amp; Season 3 tournaments will be announced soon.<br>
+            <a href="https://discord.gg/Tc6GG7sCR" class="text-cyan-400">Join Discord</a> for early access.
+        </div>
+
+        <!-- Tournament Rules -->
+        <div class="mt-16 max-w-4xl mx-auto">
+            <h3 class="font-display text-3xl tracking-tighter mb-6 text-center">Tournament Rules</h3>
+            <div class="bg-zinc-900 border border-white/10 rounded-3xl p-8 text-sm space-y-6">
+                <div>
+                    <div class="font-semibold text-base mb-2 text-cyan-400">Format</div>
+                    <p><strong>Round Robin</strong> group stage → <strong>Double Elimination</strong> bracket</p>
+                </div>
+                <div>
+                    <div class="font-semibold text-base mb-2 text-cyan-400">Team Limits</div>
+                    <p><strong>Maximum 16 teams</strong> • <strong>Minimum 8 teams</strong> required to start the tournament</p>
+                </div>
+                <div>
+                    <div class="font-semibold text-base mb-2 text-cyan-400">Match Format</div>
+                    <p>5v5 Player Control • Hall of Fame Difficulty • Best of 3 (Best of 5 in Finals)</p>
+                </div>
+                <div>
+                    <div class="font-semibold text-base mb-2 text-cyan-400">Prize Pool</div>
+                    <p>1st Place $300 • 2nd Place $100 • 3rd Place $50 ($450 total)</p>
+                </div>
+                <div>
+                    <div class="font-semibold text-base mb-2 text-cyan-400">Locker Room &amp; Invites</div>
+                    <p>Team Captains are responsible for creating a <strong>private locker room</strong> and inviting the other captains. Captains then invite their own team members.</p>
+                </div>
+                <div class="text-xs text-white/50 border-t border-white/10 pt-4">
+                    Full rules and bracket details will be posted in the Discord after registration closes.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="border-t border-white/10 py-8 px-8 text-sm text-white/50">
+        <div class="max-w-7xl mx-auto flex justify-between">
+            <div>© 2026 All-Star Team Up • @all_star_team_up</div>
+            <a href="index.html" class="hover:text-white">← Back to Home</a>
+        </div>
+    </footer>
+</body>
+</html>
+# This file tells GitHub Pages not to process this site with Jekyll
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALL-STAR TEAM UP • Premium NBA 2K Tournaments</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', system_ui, sans-serif; }
+        .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; font-weight: 600; }
+        .season-card { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .season-card.active { border-color: #22d3ee; box-shadow: 0 0 0 1px #22d3ee; }
+        .nav-scrolled { background-color: rgba(10, 10, 10, 0.95); backdrop-filter: blur(12px); }
+    </style>
+</head>
+<body class="bg-[#0A0A0A] text-white">
+    <!-- NAVBAR -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 border-b border-white/10 transition-all">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="flex items-center justify-between py-5">
+                <div class="flex items-center gap-x-3">
+                    <div class="w-10 h-10 bg-cyan-400 rounded-xl flex items-center justify-center">
+                        <i class="fa-solid fa-trophy text-[#0A0A0A] text-3xl"></i>
+                    </div>
+                    <div>
+                        <span class="font-display text-2xl font-semibold tracking-tighter">ALL-STAR</span>
+                        <span class="font-display text-2xl font-semibold tracking-tighter text-cyan-400">TEAM UP</span>
+                    </div>
+                </div>
+
+                <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
+                    <a href="#seasons" class="hover:text-cyan-400 transition-colors">Seasons</a>
+                    <a href="#how" class="hover:text-cyan-400 transition-colors">How it Works</a>
+                    <a href="#pricing" class="hover:text-cyan-400 transition-colors">Pricing</a>
+                </div>
+
+                <div class="flex items-center gap-x-4">
+                    <a href="https://discord.gg/Tc6GG7sCR" target="_blank"
+                       class="hidden sm:flex items-center gap-x-2 px-5 py-2.5 text-sm font-semibold bg-white/10 hover:bg-white/15 border border-white/20 rounded-2xl transition-all">
+                        <i class="fa-brands fa-discord"></i>
+                        <span>Join Discord</span>
+                    </a>
+                    <button onclick="document.getElementById('register-modal').showModal()"
+                            class="px-6 py-2.5 bg-white text-[#0A0A0A] hover:bg-white/90 font-semibold text-sm rounded-2xl transition-all">
+                        Register Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <div class="pt-20 pb-16 px-6 max-w-5xl mx-auto text-center border-b border-white/10" 
+         style="background: linear-gradient(rgba(10,10,10,0.88), rgba(10,10,10,0.92)), url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22600%22 height=%22600%22%3E%3Crect fill=%22%231a1a2e%22 width=%22600%22 height=%22600%22/%3E%3C/svg%27'); background-size: cover;">
+        <div class="max-w-3xl mx-auto">
+            <div class="inline-flex items-center gap-x-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 mb-6">
+                <div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
+                <span class="text-sm font-medium tracking-wider">SEASON 1 • REGISTRATION OPEN</span>
+            </div>
+
+            <h1 class="font-display text-6xl md:text-7xl leading-none font-bold tracking-tighter mb-3">
+                Premium NBA 2K<br>
+                <span class="bg-gradient-to-r from-cyan-400 to-teal-400 bg-clip-text text-transparent">Tournaments</span>
+            </h1>
+
+            <div class="mb-8">
+                <span class="inline-block bg-white/10 border border-white/20 text-white px-5 py-2 rounded-2xl text-sm font-semibold tracking-wide">
+                    1st ever private All-Star Team Up 5v5 player control tournament
+                </span>
+            </div>
+            
+            <p class="max-w-lg mx-auto text-xl text-white/70 mb-10">
+                High-stakes, professionally run NBA 2K tournaments.<br>
+                Real competition. Real prizes. Real community.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button onclick="document.getElementById('register-modal').showModal()"
+                        class="px-10 py-4 bg-white hover:bg-white/90 text-[#0A0A0A] font-semibold text-lg rounded-3xl flex items-center justify-center gap-x-3 transition-all">
+                    <span>Register for Season 1</span>
+                </button>
+                <a href="#seasons" class="px-8 py-4 border border-white/30 hover:bg-white/5 font-semibold text-lg rounded-3xl flex items-center justify-center gap-x-2 transition-all">
+                    View All Seasons
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- SEASON SCHEDULE STRIP -->
+    <div id="seasons" class="max-w-7xl mx-auto px-8 pt-16 pb-12">
+        <div class="flex items-end justify-between mb-8">
+            <div>
+                <div class="uppercase tracking-[3px] text-xs font-semibold text-cyan-400 mb-1">2026 SEASONS</div>
+                <h2 class="font-display text-4xl tracking-tighter">Choose Your Season</h2>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+            <!-- Season 1 -->
+            <div class="season-card active bg-zinc-900 border-2 border-cyan-400 rounded-3xl p-6">
+                <div class="flex justify-between mb-4">
+                    <div>
+                        <div class="flex items-center gap-x-2">
+                            <div class="w-3 h-3 bg-orange-400 rounded-full"></div>
+                            <span class="font-semibold">Season 01 — August 2026</span>
+                        </div>
+                    </div>
+                    <div class="px-3 py-1 text-xs bg-emerald-500/10 text-emerald-400 font-bold rounded-full">OPEN</div>
+                </div>
+                <div class="text-sm space-y-2 mt-4">
+                    <div class="flex justify-between"><span class="text-white/60">Registration</span><span class="font-medium">Open Now</span></div>
+                    <div class="flex justify-between"><span class="text-white/60">Tournaments</span><span class="font-medium">3 Events</span></div>
+                    <div class="flex justify-between"><span class="text-white/60">Prize Pool</span><span class="font-semibold text-emerald-400">$1,350</span></div>
+                </div>
+                <button onclick="document.getElementById('register-modal').showModal()" 
+                        class="mt-6 w-full py-3.5 bg-white text-black font-semibold rounded-2xl text-sm">REGISTER FOR SEASON 1</button>
+            </div>
+
+            <!-- Season 2 -->
+            <div class="season-card bg-zinc-900 border border-white/10 rounded-3xl p-6">
+                <div class="flex justify-between mb-4">
+                    <div>
+                        <div class="flex items-center gap-x-2">
+                            <div class="w-3 h-3 bg-purple-400 rounded-full"></div>
+                            <span class="font-semibold">Season 02 — September 2026</span>
+                        </div>
+                    </div>
+                    <div class="px-3 py-1 text-xs bg-white/10 text-white/70 font-bold rounded-full">COMING SOON</div>
+                </div>
+                <div class="text-sm space-y-2 mt-4">
+                    <div class="flex justify-between"><span class="text-white/60">Registration</span><span class="font-medium">Opens Aug 25</span></div>
+                    <div class="flex justify-between"><span class="text-white/60">Tournaments</span><span class="font-medium">3 Events</span></div>
+                    <div class="flex justify-between"><span class="text-white/60">Prize Pool</span><span class="font-semibold">$1,350</span></div>
+                </div>
+                <button onclick="alert('Thanks! We\'ll notify you when Season 2 registration opens.'); window.open('https://discord.gg/Tc6GG7sCR','_blank')" 
+                        class="mt-6 w-full py-3.5 border border-white/30 font-semibold rounded-2xl text-sm">NOTIFY ME</button>
+            </div>
+
+            <!-- Season 3 -->
+            <div class="season-card bg-zinc-900 border border-white/10 rounded-3xl p-6">
+                <div class="flex justify-between mb-4">
+                    <div>
+                        <div class="flex items-center gap-x-2">
+                            <div class="w-3 h-3 bg-blue-400 rounded-full"></div>
+                            <span class="font-semibold">Season 03 — October 2026</span>
+                        </div>
+                    </div>
+                    <div class="px-3 py-1 text-xs bg-white/10 text-white/70 font-bold rounded-full">COMING SOON</div>
+                </div>
+                <div class="text-sm space-y-2 mt-4">
+                    <div class="flex justify-between"><span class="text-white/60">Registration</span><span class="font-medium">Opens Sep 25</span></div>
+                    <div class="flex justify-between"><span class="text-white/60">Tournaments</span><span class="font-medium">3 Events</span></div>
+                    <div class="flex justify-between"><span class="text-white/60">Prize Pool</span><span class="font-semibold">$1,350</span></div>
+                </div>
+                <button onclick="alert('Thanks! We\'ll notify you when Season 3 registration opens.'); window.open('https://discord.gg/Tc6GG7sCR','_blank')" 
+                        class="mt-6 w-full py-3.5 border border-white/30 font-semibold rounded-2xl text-sm">NOTIFY ME</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- HOW IT WORKS -->
+    <div id="how" class="bg-zinc-950 border-y border-white/10 py-16">
+        <div class="max-w-6xl mx-auto px-8">
+            <div class="text-center mb-10">
+                <div class="text-cyan-400 text-sm font-semibold tracking-widest mb-1">4 SIMPLE STEPS</div>
+                <h2 class="font-display text-4xl tracking-tighter">How It Works</h2>
+            </div>
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="bg-zinc-900 border border-white/10 rounded-3xl p-7">
+                    <div class="text-3xl mb-4 opacity-70">01</div>
+                    <div class="font-semibold text-xl mb-2">Register &amp; Pay</div>
+                    <p class="text-white/70 text-sm">Secure your spot. $50/team or $15/solo via Stripe.</p>
+                </div>
+                <div class="bg-zinc-900 border border-white/10 rounded-3xl p-7">
+                    <div class="text-3xl mb-4 opacity-70">02</div>
+                    <div class="font-semibold text-xl mb-2">Join Discord</div>
+                    <p class="text-white/70 text-sm">Get bracket updates, match times, and community access.</p>
+                </div>
+                <div class="bg-zinc-900 border border-white/10 rounded-3xl p-7">
+                    <div class="text-3xl mb-4 opacity-70">03</div>
+                    <div class="font-semibold text-xl mb-2">Play Your Matches</div>
+                    <p class="text-white/70 text-sm">Compete on scheduled dates. We handle organization.</p>
+                </div>
+                <div class="bg-zinc-900 border border-white/10 rounded-3xl p-7">
+                    <div class="text-3xl mb-4 opacity-70">04</div>
+                    <div class="font-semibold text-xl mb-2">Win Cash Prizes</div>
+                    <p class="text-white/70 text-sm">Prizes paid out after each event via Stripe/PayPal.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PRICING -->
+    <div id="pricing" class="max-w-5xl mx-auto px-8 py-16">
+        <div class="text-center mb-10">
+            <div class="text-cyan-400 text-sm font-semibold tracking-widest">PRICING</div>
+            <h2 class="font-display text-4xl tracking-tighter">Simple &amp; Transparent</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6 max-w-[820px] mx-auto">
+            <div class="bg-zinc-900 border border-white/10 rounded-3xl p-8">
+                <div class="flex justify-between">
+                    <div>
+                        <div class="font-semibold text-2xl">Team Entry</div>
+                        <div class="text-white/60 text-sm">Up to 5 players</div>
+                    </div>
+                    <div class="text-right">
+                        <div class="text-6xl font-semibold tracking-tighter">$50</div>
+                    </div>
+                </div>
+                <ul class="mt-8 space-y-3 text-sm">
+                    <li class="flex gap-x-3"><i class="fa-solid fa-check text-emerald-400 mt-1"></i> Full team registration</li>
+                    <li class="flex gap-x-3"><i class="fa-solid fa-check text-emerald-400 mt-1"></i> Access to all 3 tournaments</li>
+                    <li class="flex gap-x-3"><i class="fa-solid fa-check text-emerald-400 mt-1"></i> Discord VIP role + updates</li>
+                </ul>
+                <button onclick="selectPlan('team')" 
+                        class="mt-8 w-full py-4 bg-white text-black font-semibold rounded-2xl">Pay $50 — Register Team (2K25 PS4/PS5)</button>
+            </div>
+
+            <div class="bg-zinc-900 border border-white/10 rounded-3xl p-8">
+                <div class="flex justify-between">
+                    <div>
+                        <div class="font-semibold text-2xl">Solo Entry</div>
+                        <div class="text-white/60 text-sm">Individual player</div>
+                    </div>
+                    <div class="text-right">
+                        <div class="text-6xl font-semibold tracking-tighter">$15</div>
+                    </div>
+                </div>
+                <ul class="mt-8 space-y-3 text-sm">
+                    <li class="flex gap-x-3"><i class="fa-solid fa-check text-emerald-400 mt-1"></i> Individual registration</li>
+                    <li class="flex gap-x-3"><i class="fa-solid fa-check text-emerald-400 mt-1"></i> Access to all 3 tournaments</li>
+                    <li class="flex gap-x-3"><i class="fa-solid fa-check text-emerald-400 mt-1"></i> Match notifications</li>
+                </ul>
+                <button onclick="selectPlan('solo')" 
+                        class="mt-8 w-full py-4 border border-white/40 font-semibold rounded-2xl">Pay $15 — Solo Queue Entry</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- RULES SUMMARY -->
+    <div class="max-w-4xl mx-auto px-8 py-12 border-t border-white/10">
+        <h3 class="font-display text-3xl tracking-tighter mb-6 text-center">Tournament Rules</h3>
+        <div class="bg-zinc-900 border border-white/10 rounded-3xl p-8 text-sm space-y-5">
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <div class="font-semibold mb-2">Format</div>
+                    <p>Round Robin group stage → Double Elimination bracket</p>
+                </div>
+                <div>
+                    <div class="font-semibold mb-2">Team Limits</div>
+                    <p>Max 16 teams • Min 8 teams to start</p>
+                </div>
+                <div>
+                    <div class="font-semibold mb-2">Locker Room</div>
+                    <p>Team Captain creates private locker room and invites other captains. Captains then invite their team members.</p>
+                </div>
+                <div>
+                    <div class="font-semibold mb-2">Prize Pool</div>
+                    <p>1st $300 • 2nd $100 • 3rd $50 ($450 total)</p>
+                </div>
+            </div>
+            <div class="pt-4 border-t border-white/10 text-xs text-white/50">
+                Full detailed rules available in Discord after registration.
+            </div>
+        </div>
+    </div>
+
+    <!-- FINAL CTA -->
+    <div class="bg-zinc-950 border-t border-white/10 py-14 text-center">
+        <div class="max-w-md mx-auto px-6">
+            <h3 class="font-display text-3xl tracking-tight mb-3">Ready to compete?</h3>
+            <p class="text-white/70 mb-6">Season 1 registration is now open.</p>
+            <button onclick="document.getElementById('register-modal').showModal()"
+                    class="px-12 py-4 bg-white text-black font-semibold text-lg rounded-3xl">Register for Season 1</button>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-white/10 py-8 px-8 text-sm text-white/50">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-y-3">
+            <div>© 2026 All-Star Team Up • Operated by <span class="text-white font-medium">@all_star_team_up</span></div>
+            <div class="flex gap-x-5">
+                <a href="https://discord.gg/Tc6GG7sCR" class="hover:text-white">Discord</a>
+                <a href="#" class="hover:text-white">Rules</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- REGISTRATION MODAL -->
+    <dialog id="register-modal" class="bg-zinc-900 border border-white/20 rounded-3xl max-w-md w-full p-0 backdrop:bg-black/70">
+        <div class="p-8">
+            <div class="flex justify-between mb-6">
+                <div>
+                    <div class="font-semibold text-2xl">Season 1 Registration</div>
+                    <div class="text-sm text-white/60">August 2026</div>
+                </div>
+                <button onclick="document.getElementById('register-modal').close()" class="text-4xl text-white/40 hover:text-white leading-none">&times;</button>
+            </div>
+
+            <form name="season1-registration" method="POST" data-netlify="true" action="success.html">
+                <input type="hidden" name="form-name" value="season1-registration">
+                
+                <div class="space-y-4">
+                    <div>
+                        <label class="text-xs text-white/60 block mb-1">FULL NAME</label>
+                        <input type="text" name="name" required class="w-full bg-zinc-950 border border-white/20 rounded-2xl px-4 py-3 text-sm">
+                    </div>
+                    <div>
+                        <label class="text-xs text-white/60 block mb-1">PSN / GAMERTAG</label>
+                        <input type="text" name="gamertag" required class="w-full bg-zinc-950 border border-white/20 rounded-2xl px-4 py-3 text-sm">
+                    </div>
+                    <div>
+                        <label class="text-xs text-white/60 block mb-1">EMAIL</label>
+                        <input type="email" name="email" required class="w-full bg-zinc-950 border border-white/20 rounded-2xl px-4 py-3 text-sm">
+                    </div>
+
+                    <div>
+                        <label class="text-xs text-white/60 block mb-2">ENTRY TYPE</label>
+                        <div class="flex gap-3">
+                            <label class="flex-1">
+                                <input type="radio" name="entry_type" value="team" checked class="peer hidden">
+                                <div class="peer-checked:border-cyan-400 border border-white/20 rounded-2xl p-4 text-center">
+                                    <div class="font-semibold">Team • $50</div>
+                                </div>
+                            </label>
+                            <label class="flex-1">
+                                <input type="radio" name="entry_type" value="solo" class="peer hidden">
+                                <div class="peer-checked:border-cyan-400 border border-white/20 rounded-2xl p-4 text-center">
+                                    <div class="font-semibold">Solo • $15</div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" 
+                        class="mt-6 w-full py-4 bg-white text-black font-semibold rounded-2xl">Complete Registration → Pay with Stripe</button>
+                <p class="text-center text-[10px] text-white/40 mt-3">You will be redirected to complete payment securely.</p>
+            </form>
+        </div>
+    </dialog>
+
+    <script>
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('nav-scrolled', window.scrollY > 30);
+        });
+
+        function selectPlan(type) {
+            const modal = document.getElementById('register-modal');
+            modal.showModal();
+            setTimeout(() => {
+                const radio = modal.querySelector(`input[value="${type}"]`);
+                if (radio) radio.checked = true;
+            }, 80);
+        }
+
+        // Form handling - ready for Netlify + Stripe
+        const form = document.querySelector('form[name="season1-registration"]');
+        if (form) {
+            form.addEventListener('submit', function(e) {
+                const btn = form.querySelector('button[type="submit"]');
+                if (btn) {
+                    btn.innerHTML = 'Processing payment...';
+                    btn.disabled = true;
+                }
+                setTimeout(() => {
+                    alert('✅ In production: This form will submit to Netlify and then redirect to your Stripe checkout page.\n\nNext step: Replace the form submission with your actual Stripe Payment Link.');
+                    document.getElementById('register-modal').close();
+                }, 900);
+            });
+        }
+
+        console.log('%c[All-Star Team Up] Professional premium website ready.', 'color:#64748b');
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register • ALL-STAR TEAM UP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', system_ui, sans-serif; }
+        .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; font-weight: 600; }
+    </style>
+</head>
+<body class="bg-[#0A0A0A] text-white">
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-[#0A0A0A]/95 backdrop-blur">
+        <div class="max-w-7xl mx-auto px-8 flex items-center justify-between py-5">
+            <div class="flex items-center gap-x-3">
+                <div class="w-9 h-9 bg-cyan-400 rounded-xl flex items-center justify-center">
+                    <i class="fa-solid fa-trophy text-[#0A0A0A]"></i>
+                </div>
+                <a href="index.html" class="font-display text-xl font-semibold tracking-tighter">ALL-STAR TEAM UP</a>
+            </div>
+            <div class="flex items-center gap-x-8 text-sm">
+                <a href="index.html" class="hover:text-cyan-400">Home</a>
+                <a href="tournaments.html" class="hover:text-cyan-400">Tournaments</a>
+                <a href="schedule.html" class="hover:text-cyan-400">Schedule</a>
+                <a href="register.html" class="text-cyan-400 font-medium">Register</a>
+                <a href="https://discord.gg/Tc6GG7sCR" target="_blank" class="px-5 py-2 bg-white/10 rounded-2xl text-sm font-medium">Discord</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="pt-20 pb-16 px-8 max-w-lg mx-auto">
+        <div class="text-center mb-10">
+            <div class="text-cyan-400 text-sm font-semibold tracking-[2px]">SEASON 1 • AUGUST 2026</div>
+            <h1 class="font-display text-5xl tracking-tighter mt-2">Register Now</h1>
+            <p class="text-white/70 mt-3">Secure your spot in the most competitive NBA 2K tournaments.</p>
+        </div>
+
+        <!-- Registration Form -->
+        <form name="season1-registration" method="POST" data-netlify="true" class="bg-zinc-900 border border-white/10 rounded-3xl p-8 space-y-6">
+            <input type="hidden" name="form-name" value="season1-registration">
+
+            <div>
+                <label class="text-xs text-white/60 block mb-1.5">FULL NAME</label>
+                <input type="text" name="name" required class="w-full bg-zinc-950 border border-white/20 rounded-2xl px-4 py-3.5 text-sm focus:border-cyan-400 outline-none">
+            </div>
+
+            <div>
+                <label class="text-xs text-white/60 block mb-1.5">PSN / GAMERTAG</label>
+                <input type="text" name="gamertag" required class="w-full bg-zinc-950 border border-white/20 rounded-2xl px-4 py-3.5 text-sm focus:border-cyan-400 outline-none">
+            </div>
+
+            <div>
+                <label class="text-xs text-white/60 block mb-1.5">EMAIL ADDRESS</label>
+                <input type="email" name="email" required class="w-full bg-zinc-950 border border-white/20 rounded-2xl px-4 py-3.5 text-sm focus:border-cyan-400 outline-none">
+            </div>
+
+            <div>
+                <label class="text-xs text-white/60 block mb-2">ENTRY TYPE</label>
+                <div class="grid grid-cols-2 gap-3">
+                    <label class="cursor-pointer">
+                        <input type="radio" name="entry_type" value="team" checked class="peer hidden">
+                        <div class="peer-checked:border-cyan-400 border border-white/20 rounded-2xl p-4 text-center">
+                            <div class="font-semibold">Team Entry</div>
+                            <div class="text-2xl font-semibold tracking-tighter mt-1">$50</div>
+                        </div>
+                    </label>
+                    <label class="cursor-pointer">
+                        <input type="radio" name="entry_type" value="solo" class="peer hidden">
+                        <div class="peer-checked:border-cyan-400 border border-white/20 rounded-2xl p-4 text-center">
+                            <div class="font-semibold">Solo Entry</div>
+                            <div class="text-2xl font-semibold tracking-tighter mt-1">$15</div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit"
+                    class="w-full py-4 bg-white hover:bg-white/90 active:bg-white text-black font-semibold rounded-2xl text-base mt-2">
+                Complete Registration &amp; Pay with Stripe
+            </button>
+
+            <p class="text-center text-xs text-white/40">You will be redirected to Stripe to finish payment securely.</p>
+        </form>
+
+        <div class="text-center mt-8 text-sm text-white/60">
+            Already registered? <a href="https://discord.gg/Tc6GG7sCR" class="text-cyan-400">Join the Discord</a>
+        </div>
+    </div>
+
+    <footer class="border-t border-white/10 py-8 px-8 text-sm text-white/50">
+        <div class="max-w-7xl mx-auto flex justify-between">
+            <div>© 2026 All-Star Team Up • @all_star_team_up</div>
+            <a href="index.html" class="hover:text-white">← Back to Home</a>
+        </div>
+    </footer>
+
+    <script>
+        const form = document.querySelector('form[name="season1-registration"]');
+        if (form) {
+            form.addEventListener('submit', function() {
+                const btn = form.querySelector('button[type="submit"]');
+                if (btn) {
+                    btn.innerHTML = 'Processing...';
+                    btn.disabled = true;
+                }
+                setTimeout(() => {
+                    alert('In production this will submit to Netlify and redirect to your Stripe checkout page.');
+                }, 600);
+            });
+        }
+    </script>
+</body>
+</html>
