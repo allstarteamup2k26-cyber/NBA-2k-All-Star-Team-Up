@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2K26 Current Gen (PS4) • ALL-STAR TEAM UP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', system_ui, sans-serif; }
+        .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; font-weight: 600; }
+    </style>
+</head>
+<body class="bg-[#0A0A0A] text-white">
+    <nav class="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-[#0A0A0A]/95 backdrop-blur">
+        <div class="max-w-7xl mx-auto px-8 flex items-center justify-between py-5">
+            <div class="flex items-center gap-x-3">
+                <div class="w-9 h-9 bg-cyan-400 rounded-xl flex items-center justify-center">
+                    <i class="fa-solid fa-trophy text-[#0A0A0A]"></i>
+                </div>
+                <a href="index.html" class="font-display text-xl font-semibold tracking-tighter">ALL-STAR TEAM UP</a>
+            </div>
+            <div class="flex items-center gap-x-6 text-sm">
+                <a href="index.html" class="hover:text-cyan-400">Home</a>
+                <a href="tournaments.html" class="hover:text-cyan-400">All Tournaments</a>
+                <a href="https://discord.gg/Tc6GG7sCR" class="px-5 py-2 bg-white/10 rounded-2xl">Discord</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="pt-20 pb-16 px-8 max-w-5xl mx-auto">
+        <div class="text-center mb-12">
+            <div class="inline-block px-4 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-bold rounded-full mb-4">2K26 CURRENT GEN • PS4</div>
+            <h1 class="font-display text-5xl tracking-tighter">2K26 Current Gen All-Star Team Up</h1>
+            <p class="text-xl text-white/70 mt-3">PS4 • 5v5 Player Control Tournament</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6 mb-12">
+            <div class="bg-zinc-900 border border-white/10 rounded-3xl p-7">
+                <div class="font-semibold mb-2">Format</div>
+                <p>Round Robin → Double Elimination</p>
+            </div>
+            <div class="bg-zinc-900 border border-white/10 rounded-3xl p-7">
+                <div class="font-semibold mb-2">Team Limits</div>
+                <p>Max 32 teams • Minimum 8 to start</p>
+            </div>
+            <div class="bg-zinc-900 border border-white/10 rounded-3xl p-7">
+                <div class="font-semibold mb-2">Prize Pool</div>
+                <p>1st $300 • 2nd $100 • 3rd $50</p>
+            </div>
+        </div>
+
+        <div class="mb-12">
+            <h3 class="font-display text-3xl tracking-tighter mb-6">Bracket & Schedule</h3>
+            <div class="bg-zinc-900 border border-white/10 rounded-3xl p-8 text-center text-white/60">
+                Bracket posted in Discord after registration closes.<br>
+                All matches on Hall of Fame difficulty.
+            </div>
+        </div>
+
+        <div class="text-center">
+            <a href="register.html" class="inline-block px-10 py-4 bg-white text-black font-semibold rounded-3xl text-lg">Register for 2K26 PS4 Tournament</a>
+            <p class="text-sm text-white/50 mt-4">Team $50 • Solo $15</p>
+        </div>
+
+        <!-- Dynamic Bracket & Schedule -->
+        <div class="mt-16 max-w-4xl mx-auto">
+            <h3 class="font-display text-3xl tracking-tighter mb-8 text-center">Interactive Bracket &amp; Schedule</h3>
+            
+            <div class="bg-zinc-900 border border-white/10 rounded-3xl p-8 mb-8">
+                <div class="mb-6">
+                    <label class="block text-sm font-medium mb-2">Number of Teams (8 - 32)</label>
+                    <input type="number" id="teamCount" value="16" min="8" max="32" class="bg-zinc-950 border border-white/20 rounded-2xl px-4 py-3 w-32 text-center">
+                    <button onclick="generateBracket()" class="ml-4 px-6 py-3 bg-white text-black font-semibold rounded-2xl">Generate Bracket</button>
+                </div>
+                <div id="bracket-container" class="min-h-[200px] bg-zinc-950 rounded-2xl p-6 text-sm">
+                    <!-- Bracket will be generated here via JavaScript -->
+                </div>
+            </div>
+
+            <div class="bg-zinc-900 border border-white/10 rounded-3xl p-8">
+                <h4 class="font-semibold mb-4">Sample Schedule (Editable)</h4>
+                <div class="space-y-3 text-sm" id="schedule-list">
+                    <div class="flex justify-between bg-zinc-950 p-4 rounded-2xl">
+                        <div>Qualifier 1</div>
+                        <div class="text-white/60">August 8, 2026 • 8:00 PM ET</div>
+                    </div>
+                    <div class="flex justify-between bg-zinc-950 p-4 rounded-2xl">
+                        <div>Qualifier 2</div>
+                        <div class="text-white/60">August 15, 2026 • 8:00 PM ET</div>
+                    </div>
+                    <div class="flex justify-between bg-zinc-950 p-4 rounded-2xl">
+                        <div>Finals</div>
+                        <div class="text-white/60">August 22, 2026 • 8:00 PM ET</div>
+                    </div>
+                </div>
+                <p class="text-xs text-white/40 mt-4">* Full schedule will be posted in Discord after registration closes.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function generateBracket() {
+            const count = parseInt(document.getElementById('teamCount').value);
+            const container = document.getElementById('bracket-container');
+            container.innerHTML = '';
+
+            if (count < 8 || count > 32) {
+                container.innerHTML = '<p class="text-red-400">Please enter between 8 and 32 teams.</p>';
+                return;
+            }
+
+            let html = `<div class="font-semibold mb-4">Double Elimination Bracket Preview (${count} teams)</div>`;
+            html += `<div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">`;
+
+            const rounds = Math.ceil(Math.log2(count));
+            for (let r = 1; r <= rounds; r++) {
+                html += `<div class="bg-zinc-900 p-4 rounded-2xl">`;
+                html += `<div class="font-medium mb-3">Round ${r}</div>`;
+                for (let i = 1; i <= Math.ceil(count / Math.pow(2, r-1)); i++) {
+                    html += `<div class="mb-1.5 p-2 bg-zinc-950 rounded-xl">Match ${i}</div>`;
+                }
+                html += `</div>`;
+            }
+
+            html += `</div>`;
+            container.innerHTML = html;
+        }
+
+        window.onload = function() {
+            const container = document.getElementById('bracket-container');
+            if (container) {
+                container.innerHTML = `<p class="text-white/50">Click "Generate Bracket" above to preview a double elimination bracket.</p>`;
+            }
+        }
+    </script>
+
+    <footer class="border-t border-white/10 py-8 px-8 text-sm text-white/50">
+        <div class="max-w-7xl mx-auto flex justify-between">
+            <div>© 2026 All-Star Team Up • @all_star_team_up</div>
+            <a href="index.html" class="hover:text-white">← Back to Home</a>
+        </div>
+    </footer>
+</body>
+</html>
