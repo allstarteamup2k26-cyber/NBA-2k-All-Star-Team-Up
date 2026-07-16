@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register • ALL-STAR TEAM UP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', system_ui, sans-serif; }
+        .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; font-weight: 600; }
+    </style>
+</head>
+<body class="bg-[#0A0A0A] text-white">
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-[#0A0A0A]/95 backdrop-blur">
+        <div class="max-w-7xl mx-auto px-8 flex items-center justify-between py-5">
+            <div class="flex items-center gap-x-3">
+                <div class="w-9 h-9 bg-cyan-400 rounded-xl flex items-center justify-center">
+                    <i class="fa-solid fa-trophy text-[#0A0A0A]"></i>
+                </div>
+                <a href="index.html" class="font-display text-xl font-semibold tracking-tighter">ALL-STAR TEAM UP</a>
+            </div>
+            <div class="flex items-center gap-x-8 text-sm">
+                <a href="index.html" class="hover:text-cyan-400">Home</a>
+                <a href="tournaments.html" class="hover:text-cyan-400">Tournaments</a>
+                <a href="schedule.html" class="hover:text-cyan-400">Schedule</a>
+                <a href="register.html" class="text-cyan-400 font-medium">Register</a>
+                <a href="https://discord.gg/Tc6GG7sCR" target="_blank" class="px-5 py-2 bg-white/10 rounded-2xl text-sm font-medium">Discord</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="pt-20 pb-16 px-8 max-w-lg mx-auto">
+        <div class="text-center mb-10">
+            <div class="text-cyan-400 text-sm font-semibold tracking-[2px]">SEASON 1 • JULY 17–23, 2026</div>
+            <h1 class="font-display text-5xl tracking-tighter mt-2">Register Now</h1>
+            <p class="text-white/70 mt-3">Secure your spot in the most competitive NBA 2K tournaments.</p>
+            
+            <div class="mt-6 inline-block bg-zinc-900 border border-white/10 rounded-2xl px-8 py-4 text-sm">
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-x-8 gap-y-2 text-left">
+                    <div><span class="text-white/50">Registration Opens:</span><br><span class="font-semibold">July 17, 2026</span></div>
+                    <div><span class="text-white/50">Deadline:</span><br><span class="font-semibold">July 23, 2026</span></div>
+                    <div><span class="text-white/50">First Games:</span><br><span class="font-semibold">July 24, 2026</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Registration Form -->
+        <form name="season1-registration" method="POST" data-netlify="true" class="bg-zinc-900 border border-white/10 rounded-3xl p-8 space-y-6">
+            <input type="hidden" name="form-name" value="season1-registration">
+
+            <div>
+                <label class="text-xs text-white/60 block mb-1.5">FULL NAME</label>
+                <input type="text" name="name" required class="w-full bg-zinc-950 border border-white/20 rounded-2xl px-4 py-3.5 text-sm focus:border-cyan-400 outline-none">
+            </div>
+
+            <div>
+                <label class="text-xs text-white/60 block mb-1.5">PSN / GAMERTAG</label>
+                <input type="text" name="gamertag" required class="w-full bg-zinc-900 border border-white/30 rounded-2xl px-4 py-3.5 text-sm text-white focus:border-cyan-400 outline-none placeholder:text-white/40">
+            </div>
+
+            <div>
+                <label class="text-xs text-white/60 block mb-1.5">EMAIL ADDRESS</label>
+                <input type="email" name="email" required class="w-full bg-zinc-900 border border-white/30 rounded-2xl px-4 py-3.5 text-sm text-white focus:border-cyan-400 outline-none placeholder:text-white/40">
+            </div>
+
+            <div>
+                <label class="text-xs text-white/60 block mb-2">ENTRY TYPE</label>
+                <div class="grid grid-cols-2 gap-3">
+                    <label class="cursor-pointer">
+                        <input type="radio" name="entry_type" value="team" checked class="peer hidden">
+                        <div class="peer-checked:border-cyan-400 border border-white/20 rounded-2xl p-4 text-center">
+                            <div class="font-semibold">Team Entry</div>
+                            <div class="text-2xl font-semibold tracking-tighter mt-1">$50</div>
+                        </div>
+                    </label>
+                    <label class="cursor-pointer">
+                        <input type="radio" name="entry_type" value="solo" class="peer hidden">
+                        <div class="peer-checked:border-cyan-400 border border-white/20 rounded-2xl p-4 text-center">
+                            <div class="font-semibold">Solo Entry</div>
+                            <div class="text-2xl font-semibold tracking-tighter mt-1">$15</div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit"
+                    class="w-full py-4 bg-white hover:bg-white/90 active:bg-white text-black font-semibold rounded-2xl text-base mt-2">
+                Complete Registration &amp; Pay with Stripe
+            </button>
+
+            <p class="text-center text-xs text-white/40">You will be redirected to Stripe to finish payment securely.</p>
+        </form>
+
+        <div class="text-center mt-8 text-sm text-white/60">
+            Already registered? <a href="https://discord.gg/Tc6GG7sCR" class="text-cyan-400">Join the Discord</a>
+        </div>
+    </div>
+
+    <footer class="border-t border-white/10 py-8 px-8 text-sm text-white/50">
+        <div class="max-w-7xl mx-auto flex justify-between">
+            <div>© 2026 All-Star Team Up • @all_star_team_up</div>
+            <a href="index.html" class="hover:text-white">← Back to Home</a>
+        </div>
+    </footer>
+
+    <script>
+        const form = document.querySelector('form[name="season1-registration"]');
+        if (form) {
+            form.addEventListener('submit', function(e) {
+                const btn = form.querySelector('button[type="submit"]');
+                if (btn) {
+                    btn.innerHTML = 'Redirecting to Stripe...';
+                    btn.disabled = true;
+                }
+                // In production, the form would submit to Netlify and then redirect to Stripe.
+                // For now, we let the form submit naturally or redirect after a short delay.
+                setTimeout(() => {
+                    // Optional: window.location.href = 'success.html';
+                }, 800);
+            });
+        }
+    </script>
+</body>
+</html>
